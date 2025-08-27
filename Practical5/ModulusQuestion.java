@@ -1,12 +1,16 @@
 package Practical5;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class ModulusQuestion {
     public static void main(String[] args) throws IOException {
         
-        String filename = "C:/data/Modulus Questions.txt";
+        new File ("C:\\Practical5").mkdir();
+        System.out.println("A new question added");
+        
+        String filename = "C:/Practical5/Modulus Questions.txt";
         FileWriter fw = new FileWriter(filename, true);
 
         double random1 = Math.random()*100;
@@ -21,3 +25,4 @@ public class ModulusQuestion {
 
     }
 }
+
