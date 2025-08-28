@@ -16,7 +16,7 @@ public class QueueReceipt {
 
         System.out.println("Receipt generated. Thank you.");
         
-        String filename = "C:/data/QReceipt.txt";
+        String filename = "C:/Practical5/QReceipt.txt";
         FileWriter fw = new FileWriter(filename, true);
 
         LocalDateTime ldt = LocalDateTime.now();
@@ -39,3 +39,4 @@ public class QueueReceipt {
 
     }
 }
+
